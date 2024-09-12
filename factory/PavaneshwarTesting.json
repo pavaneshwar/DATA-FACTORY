@@ -1,0 +1,9 @@
+{
+	"name": "PavaneshwarTesting",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "88a7fc5d-344f-47ed-baf9-c86c2d409a4d",
+		"tenantId": "86dc182d-aead-43c2-aca8-fa20153693e2"
+	}
+}
