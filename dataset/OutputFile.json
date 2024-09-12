@@ -1,0 +1,19 @@
+{
+	"name": "OutputFile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "OutputFile",
+				"folderPath": "Output",
+				"container": "test1container"
+			}
+		}
+	}
+}

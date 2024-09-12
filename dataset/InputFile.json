@@ -1,0 +1,19 @@
+{
+	"name": "InputFile",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "New Text Document.txt",
+				"folderPath": "Input_Test",
+				"container": "test1container"
+			}
+		}
+	}
+}
