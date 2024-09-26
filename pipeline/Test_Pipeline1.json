@@ -19,7 +19,8 @@
 						"type": "BinarySource",
 						"storeSettings": {
 							"type": "AzureBlobStorageReadSettings",
-							"recursive": true
+							"recursive": false,
+							"deleteFilesAfterCompletion": false
 						},
 						"formatSettings": {
 							"type": "BinaryReadSettings"
@@ -36,7 +37,10 @@
 				"inputs": [
 					{
 						"referenceName": "InputFile",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"inputFile": "New Text Document.txt"
+						}
 					}
 				],
 				"outputs": [

@@ -5,12 +5,20 @@
 			"referenceName": "AzureBlobStorage1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"inputFile": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "Binary",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobStorageLocation",
-				"fileName": "New Text Document.txt",
+				"fileName": {
+					"value": "@dataset().inputFile",
+					"type": "Expression"
+				},
 				"folderPath": "Input_Test",
 				"container": "test1container"
 			}
