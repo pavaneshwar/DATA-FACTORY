@@ -57,7 +57,7 @@
 						"referenceName": "OutputFile",
 						"type": "DatasetReference",
 						"parameters": {
-							"outputFolder": "OutputDynamic"
+							"outputFolder": "Out"
 						}
 					}
 				]
