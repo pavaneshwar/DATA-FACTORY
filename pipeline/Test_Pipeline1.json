@@ -13,7 +13,16 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
-				"userProperties": [],
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "test1container/Input_Test/@{'New Text Document.txt'}"
+					},
+					{
+						"name": "Destination",
+						"value": "test1container/@{'OutputDynamic'}/"
+					}
+				],
 				"typeProperties": {
 					"source": {
 						"type": "BinarySource",
@@ -46,7 +55,10 @@
 				"outputs": [
 					{
 						"referenceName": "OutputFile",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"outputFolder": "OutputDynamic"
+						}
 					}
 				]
 			}
